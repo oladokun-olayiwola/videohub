@@ -1,6 +1,8 @@
 import axios from 'axios';
+import dotenv from "dotenv"
+dotenv.config()
 
-const KEY = "AIzaSyDffB0-7PC4ivHXxnCvo38YjQViExH59Ec";
+const KEY = process.env.YOUTUBE_API_KEY;
 
 export default axios.create({
   baseURL: " https://www.googleapis.com/youtube/v3",
