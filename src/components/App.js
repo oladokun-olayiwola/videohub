@@ -6,7 +6,7 @@ import VideoDetail from "./VideoDetail";
 
 class App extends React.Component {
   componentDidMount() {
-    this.onFormSubmit("Ibrahimovic");
+    this.onFormSubmit("");
   }
   state = { videos: [], selectedVideo: null };
 
@@ -21,7 +21,6 @@ class App extends React.Component {
       videos: response.data.items,
       selectedVideo: response.data.items[0],
     });
-    // console.log(response);
   };
 
   onVideoSelect = (video) => {
